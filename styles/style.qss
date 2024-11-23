@@ -1,0 +1,161 @@
+/* Estilo general */
+QWidget {
+    background-color: #f5f5f5;
+    color: #4a4a4a;
+    font-family: 'Segoe UI', Arial;
+}
+
+/* Contenedor principal adaptable */
+QFrame#main-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+/* Imagen del Tamagotchi adaptable */
+QLabel#pet-image {
+    min-height: 150px;
+    max-height: 300px;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+/* Layout adaptable */
+QVBoxLayout {
+    margin: 0;
+    padding: 0;
+}
+
+QHBoxLayout {
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor de stats adaptable */
+QFrame#stats-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    min-width: 280px;
+}
+
+/* Barras de progreso más pequeñas y modernas */
+QProgressBar {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+    height: 10px;
+    background-color: #f8f8f8;
+}
+
+QProgressBar::chunk {
+    background-color: #7fc97f;
+    border-radius: 4px;
+}
+
+/* Etiquetas de stats más compactas */
+QLabel#stat-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b4f4f;
+    padding: 2px;
+}
+
+QLabel#percent-label {
+    font-size: 11px;
+    color: #888;
+    padding: 2px;
+}
+
+/* Botones más compactos */
+QPushButton {
+    background-color: #6b4f4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 120px;
+}
+
+QPushButton:hover {
+    background-color: #8b6f6f;
+}
+
+/* Título más compacto */
+QLabel#title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 10px;
+}
+
+/* Estilo para el contenedor de memoria */
+QFrame#memory-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px;
+    max-width: 500px;
+}
+
+/* Estilo para el contenedor de chat */
+QFrame#chat-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px;
+    max-width: 500px;
+}
+
+/* Inputs más compactos */
+QLineEdit {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+QLineEdit:focus {
+    border-color: #7fc97f;
+}
+
+/* Combo box más compacto */
+QComboBox {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+QComboBox:hover {
+    border-color: #7fc97f;
+}
+
+/* Media queries para diferentes tamaños */
+@media (min-width: 800px) {
+    QFrame#main-container {
+        padding: 20px;
+    }
+
+    QLabel#pet-image {
+        min-height: 200px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    QFrame#main-container {
+        padding: 5px;
+    }
+
+    QLabel#pet-image {
+        min-height: 100px;
+        max-height: 200px;
+    }
+}
